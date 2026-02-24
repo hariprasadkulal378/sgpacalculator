@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VTU SGPA Calculator – AIML 3rd Sem (2022 Scheme)</title>
+    <!-- SEO Optimization -->
+    <meta name="description" content="Calculate your VTU SGPA easily for AIML 3rd Sem (2022 Scheme). Real-time calculation, pass/fail status, and grade breakdown.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator-container">
+        <header>
+            <h1>VTU SGPA Calculator – AIML 3rd Sem (2022 Scheme)</h1>
+            <p>Calculate your SGPA instantly. Real-time updates.</p>
+        </header>
+
+        <main>
+            <div class="subject-inputs">
+                <!-- Subject rows will be injected here by JS -->
+            </div>
+
+            <div class="results-section">
+                <div class="summary-cards">
+                    <div class="card" id="card-total-credits">
+                        <h3>Total Credits</h3>
+                        <p id="total-credits-display">21</p>
+                    </div>
+                    <div class="card" id="card-total-points">
+                        <h3>Total Points</h3>
+                        <p id="total-points-display">0</p>
+                    </div>
+                    <div class="card sgpa-card" id="sgpa-status-card">
+                        <h3>SGPA</h3>
+                        <p id="sgpa-display">0.00</p>
+                        <span id="pass-fail-status" class="status-badge">Incomplete</span>
+                    </div>
+                    <div class="card" id="card-percentage">
+                        <h3>Percentage</h3>
+                        <p id="percentage-display">0.00%</p>
+                    </div>
+                </div>
+
+                <div class="breakdown-section">
+                    <h3>Calculation Breakdown</h3>
+                    <div class="table-responsive">
+                        <table id="breakdown-table">
+                            <thead>
+                                <tr>
+                                    <th>Subject Code</th>
+                                    <th>Credit</th>
+                                    <th>Grade Point</th>
+                                    <th>Credit × Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Breakdown rows injected by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <button id="reset-btn" class="reset-btn">Reset Form</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>Designed for VTU Students</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
